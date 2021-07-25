@@ -21,9 +21,10 @@
 
             <div id="logo"></div>
             <div id="liens">
-                <a href="index.html" class="bouton_menu" id="page_active">Hébergements</a>
-                <a href="" class="bouton_menu">Activités</a>
-                <a href="" class="bouton_menu" id="sign_up">S'inscrire</a>
+                <div class="bouton_menu" id="page_active"><a href="#hebergements">Hébergements</a></div>
+                <div class="bouton_menu"><a href="#activites">Activités</a></div>
+                <div class="bouton_menu" id="sign_up"><a href="#navigation">S'inscrire</a></div>
+                <span class="clear"></span>
             </div>
 
 
@@ -37,7 +38,7 @@
             <form id="form_recherche" method="POST" action="index.html">
                 
                 <div id="input_search">
-                    <div class="icone_search"><i class="fas fa-map-marker-alt"></i></div>
+                    <div id="icone_search"><i class="fas fa-map-marker-alt"></i></div>
                     <input type="text" name="search" value="Marseille, France" />
                     <button type="submit" id="button_search">Rechercher</button>
             </div>
@@ -65,7 +66,7 @@
         <div id="corps">
 
         <!-- Affichage des résultats de la recherche -->
-
+            <div id="hebergements"></div>
         <div id="search_results">
             <h2>Hébergements à Marseille</h2>
                 <div id="display_results">
@@ -76,7 +77,7 @@
                 <p class="note_hebergement"></p>
             </a></div>
 
-            <div class="minia_resultat"><a class="lien_hebergement">
+            <div class="minia_resultat"><a class="lien_hebergement" href="index.html">
                 <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="minia_image" />
                 <p class="nom_hebergement">Hôtel du port</p>
                 <p class="prix_hebergement">Nuit à partir de 50€</p>
@@ -143,6 +144,7 @@
             </a></div>
 
         </div>
+    
 
     </div>
 
