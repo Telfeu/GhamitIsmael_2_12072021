@@ -10,11 +10,13 @@ html{
 }
 
 body{
-    width:fit-content;
+    width:100%;
     padding-top:0%;
     width:100%;
-    height:80%;
-    min-width:1366px
+    min-width:1366px;
+    height: 100vh;
+    padding-left:10%;
+    padding-right: 10%;
 }
 
 a{
@@ -39,19 +41,7 @@ a:hover{
 /* CSS des blocs*/
 header{
     margin-top:-5px;
-    padding:0 10% 0 10%;
 }
-
-#corps{
-    margin-bottom: 5%;
-    width: 100%;
-    padding-left:10%;
-    padding-right: 10%;
-    height:100%;
-
-}
-
-
 
 
 #recherche{
@@ -64,31 +54,37 @@ header{
 
 #search_results{ 
     background-color:#F2F2F2;
-    position: relative;
     width: 65%;
     float: left;
     border-radius: 10px;
     padding:40px;
-    margin-right:1%;
     box-sizing:border-box;
     padding-top:2%;
-    height:80%;
+    height:60%;
     min-height:700px;
     
 }
 
+#suggestions{
+    width: 33%;
+    height: 60%;
+    background-color:#F2F2F2;
+    float: left;
+    border-radius:10px;
+    box-sizing:border-box;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:2%;
+    margin-left:1%;
+    min-height:700px;
+}
+
 #display_results{
     width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
     border-radius: 10px;
     box-sizing:border-box;
     margin-bottom:5%;
     height:80%;
-    padding-left:4%;
-    padding-right:2%;
-    
-    
 }
 
 footer{
@@ -106,14 +102,14 @@ footer{
     display: inline-flex;
     box-sizing:border-box;
     background-color: white;
-    width: 30%;
-    height:48%;
+    width: calc(90% / 3);
+    height:45%;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1) ;
     border-radius: 20px;
     overflow: hidden;
-    margin-right:2%;
     margin-bottom:2%;
     padding:0.5%;
+    margin-right:2.5%;
     transition: box-shadow 0.5s ease-out 50ms;
 }
 
@@ -122,21 +118,11 @@ footer{
     transition: box-shadow 0.5s ease-out 50ms;
 }
 
-
-#suggestions{
-    width: 30%;
-    height: 80%;
-    background-color:#F2F2F2;
-    position:relative;
-    float: left;
-    border-radius:10px;
-    box-sizing:border-box;
-    padding-left:2%;
-    padding-right:2%;
-    padding-top:2%;
-    margin-left:1%;
-    min-height:700px;
+.minia_resultat:last-of-type{
+    margin-right:0%;
 }
+
+
 
 .minia_suggestion{
     display: block;
@@ -160,7 +146,7 @@ footer{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width:100%;
-    height:115px;
+    height:50%;
     display:block;
     object-fit: cover;
     margin-bottom:5%;
@@ -515,4 +501,90 @@ footer{
 
 #hebergements{
     display: hidden;
+    height:0px;
+    width:0px;
+}
+
+
+/* Partie "Activités" */
+
+
+#activites_ville{
+    display:block;
+    height:80%;
+    width:100%;
+    box-sizing: border-box;
+    margin-top:5%;
+    float:left;
+}
+
+
+
+#activites{
+    display:flex;
+    width:100%;
+    height:70%;
+    align-items: center;
+    margin-top:5%;
+    float:left;
+    margin-bottom:5%;
+    align-items:flex-start;
+    box-sizing: border-box;
+    min-height: 500px;
+}
+
+
+
+.colonnes_activite{
+    display:inline-block;
+    width:25%;
+    height:100%;
+    margin-right:2%;
+    padding-right:2%;
+    box-sizing: border-box;
+}
+
+.colonnes_activite:last-of-type{
+    margin-right:0%;
+}
+
+.minia_activite{
+    display:block;
+    position:relative;
+    background-color: white;
+    width: 100%;
+    height:45%;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1) ;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    box-sizing: border-box;
+}
+
+.minia_activite:last-of-type{
+    margin-bottom:0%;
+}
+
+
+.minia_image_activite{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:100%;
+    height:80%;
+    display:block;
+    object-fit: cover;
+    margin-bottom:5%;
+}
+
+.nom_lieu{
+    display:block;
+}
+
+#colonne1, #colonne3{
+    height:100%;
+
+}
+
+#colonne1 img, #colonne3 img{
+    height:90%;
+
 }
