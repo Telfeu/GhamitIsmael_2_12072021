@@ -1,3 +1,7 @@
+/* CSS de base */
+
+
+
 *{
     box-sizing: border-box;
     margin:0px;
@@ -13,20 +17,12 @@ html{
 body{
     width:100%;
     padding-top:0%;
-    width:100%;
     min-width:1366px;
     height: 100vh;
-<<<<<<< Updated upstream
-    padding-left:10%;
-    padding-right: 10%;
-}
-
-=======
 
 }
 
 
->>>>>>> Stashed changes
 a{
     cursor:pointer;
     text-decoration: none;
@@ -46,16 +42,11 @@ a:hover{
 
 
 
-/* CSS des blocs*/
+/* Header (Logo, navigation) */
+
+
 header{
     margin-top:-5px;
-<<<<<<< Updated upstream
-}
-
-
-#recherche{
-    margin-bottom:3%;
-=======
     padding-left:10%;
     padding-right:10%;
     height:50%;
@@ -74,41 +65,13 @@ header{
     padding-left:0px;
     margin-top:5px;
 
->>>>>>> Stashed changes
 }
 
-#recherche *{
-    margin-bottom: 2%;
+.clear{
+    clear:left;
 }
 
-#search_results{ 
-    background-color:#F2F2F2;
-    width: 65%;
-    float: left;
-    border-radius: 10px;
-    padding:40px;
-    box-sizing:border-box;
-    padding-top:2%;
-    height:60%;
-    min-height:700px;
-    
-}
 
-<<<<<<< Updated upstream
-#suggestions{
-    width: 33%;
-    height: 60%;
-    background-color:#F2F2F2;
-    float: left;
-    border-radius:10px;
-    box-sizing:border-box;
-    padding-left:2%;
-    padding-right:2%;
-    padding-top:2%;
-    margin-left:1%;
-    min-height:700px;
-}
-=======
 #logo{
     width:20%;
     height:100%;
@@ -120,175 +83,137 @@ header{
     margin-top:20px;
     float:left;
     margin-right:30%;
->>>>>>> Stashed changes
 
-#display_results{
-    width: 100%;
-    border-radius: 10px;
-    box-sizing:border-box;
-    margin-bottom:5%;
-    height:80%;
 }
 
-footer{
-    display: block;
-    clear:both;
-    width: 100%;
-    background-color: darkred;
+#logo a{
+    display:block;
+    width:100%;
+    height:100%;
     
 }
 
-
-/* */
-
-.minia_resultat{
-    display: inline-flex;
-    box-sizing:border-box;
-    background-color: white;
-    width: calc(90% / 3);
-    height:45%;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1) ;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom:2%;
-    padding:0.5%;
-    margin-right:2.5%;
-    transition: box-shadow 0.5s ease-out 50ms;
-}
-
-.minia_resultat:hover{
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .2) ;
-    transition: box-shadow 0.5s ease-out 50ms;
-}
-
-.minia_resultat:last-of-type{
-    margin-right:0%;
-}
-
-
-
-.minia_suggestion{
-    display: block;
-    background-color: white;
-    width: 100%;
-    height:23%;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1) ;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom:10%;
-    padding:5px;
-    transition: box-shadow 0.5s ease-out 50ms;
-}
-
-.minia_suggestion:hover{
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .2) ;
-    transition: box-shadow 0.5s ease-out 50ms;
-}
-
-.minia_image{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width:100%;
-    height:50%;
-    display:block;
-    object-fit: cover;
-    margin-bottom:5%;
-}
-
-.minia_image_suggestion{
+.bouton_menu{
     display:inline-flex;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width:35%;
     height:100%;
-    object-fit: cover;
-    position:relative;
-    float:left;
+    width:25%;
+    align-items:center;
+    text-align:center;
+    min-width: 140px;
+    
 }
 
-.suggestion_text{
-    float:left;
-    width: 60%;
-    height:100%;
-    margin-left:3%;
-    padding-top:5%;
+.bouton_menu a{
+    display:inline-block;
+    width:100%;
+    align-self: center;
 }
 
-<<<<<<< Updated upstream
-.suggestion_text p{
-    display:block;
-    height:30%;
-=======
+#page_active{
+    border-top: solid 4px blue;
+}
+
+
+
+.bouton_menu a:focus{
+    color:red;
+}
+
+
+
+#sign_up a{
+    color:#1261d6;
+    font-weight: bolder;
+}
+
+
+/* Barre de recherche */
+
 #recherche{
     margin-bottom:3%;
     height:100%;
->>>>>>> Stashed changes
 }
 
-.div_footer{
-    display: inline-block;
-    background: darkseagreen;
-    width:20%
-}
-
-.note_hebergement{
-    line-height: 2em;
-}
-
-#suggestions .note_hebergement{
-    line-height: 1em;
+#recherche *{
+    margin-bottom: 2%;
 }
 
 
-/* Fomattage texte */
-
-.etoile_vide{
-    color:#F2F2F2;
+#input_search{
+    display:inline-flex;
+    width:40%;
+    height:50px;
+    margin-bottom:5%;
+    align-items: center;
+    text-align: center;
+    border:none;  
 }
 
-.etoile_pleine{
-    color:#0065FC;
+#input_search *{
+    height:100%;
+    font-weight:900;
 }
 
-.minia_resultat p{
-    margin-left:5%;
-    margin-bottom: 4%;
-    font-size: 100%;
+#form_recherche input{
+    float:left;
+    width:50%;
+    padding:10px;
+    font-size: 1em;
+    border:none;
+    border-top:solid 4px #F2F2F2;
+    border-bottom:solid 4px #F2F2F2;
 }
 
-
-.minia_suggestion p{
-    margin-bottom: 5%;
-    height:30%;
-    font-size:1em;
-}
-
-
-#search_results h2{
-    margin-bottom:4%;
-}
-
-#suggestions h2{
-    margin-bottom:10%;
-}
-
-.nom_hebergement{
-    font-weight:bolder;
-    font-size: 1.2em;
+#form_recherche input:focus{
+    outline:none;
 }
 
 
-#show_more{
-    font-weight: bold;
-    font-size: 18px;
+#button_search{
+    float:left;
+    text-align: center;
+    align-items: center;
+    background: #0065FC;
+    color: white;
+    font-size: 17px;
     cursor:pointer;
-    transition: color 0.5s ease-out 50ms;
+    width:fit-content;
+    text-align:center;
+    vertical-align:middle;
+    border: hidden;
+    border-top-right-radius: 20px;  
+    border-bottom-right-radius: 20px; 
+    padding-left:2.5%;
+    padding-right:2.5%;
 }
 
-#show_more:hover{
-    color:blue;
-    transition: color 0.5s ease-out 50ms;
+#button_search p{
+    width:100%;
 }
+
+#button_search:active{
+    background: #0057da;
+}
+
+#icone_search{
+    float:left;
+    color:black;
+    background-color:#F2F2F2;
+    border-top-left-radius: 20px;  
+    border-bottom-left-radius: 20px;   
+    width:50px; 
+    text-align: center;
+    float:left;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+}
+
+#loupe{
+    display:none;
+}
+
+/* Filtres */
 
 
 #filtres{
@@ -322,8 +247,6 @@ footer{
 .filter:hover{
     border: solid #c0c0c0 3px;
     transition: 0.5s ease-out 50ms;
-<<<<<<< Updated upstream
-=======
     cursor: pointer;
 }
 
@@ -461,67 +384,45 @@ footer{
     padding:0.5%;
     margin-right:3%;
     transition: box-shadow 0.5s ease-out 50ms;
->>>>>>> Stashed changes
 }
 
-.filter p{
-    align-items: center;
+.minia_resultat:hover{
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .2) ;
+    transition: box-shadow 0.5s ease-out 50ms;
 }
 
-
-#filtres h4{
-    display:inline-flex;
-    float:left;
-
-
+.minia_resultat:last-of-type{
+    margin-right:0%;
 }
 
 
-#filtres{
-    height:70px;
-    align-items: center;
-    text-align: center;
-}
-
-.filtre_text{
-    display:inline-flex;
-}
-
-
-#info{
-    display: inline-flex;
-    color:blue;
-    border:solid #F2F2F2 2px;
-    border-radius: 50px;   
-    width:30px;
-    height:30px; 
-    margin-right:10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size:20px;
-
-}
-
-
-
-/* Header - Logo et navigation du site */
-
-#navigation{
-    margin-bottom:50px;
-    height:100px;
-    display:block;
-    align-items: center;
-    text-align: center;
+.minia_image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width:100%;
-    padding-left:0px;
-    padding-top:10px;
+    height:50%;
+    display:block;
+    object-fit: cover;
+    margin-bottom:5%;
 }
 
-<<<<<<< Updated upstream
-.clear{
-    clear:left;
-=======
+#show_more{
+    font-weight: bold;
+    font-size: 18px;
+    cursor:pointer;
+    transition: color 0.5s ease-out 50ms;
+}
+
+#show_more:hover{
+    color:blue;
+    transition: color 0.5s ease-out 50ms;
+}
+
+
+
+
+/* Suggestions */
+
 #suggestions{
     width: 33%;
     flex-basis:auto;
@@ -536,170 +437,102 @@ footer{
     margin-left:1%;
     min-height:700px;
     order:2;
->>>>>>> Stashed changes
 }
 
+.minia_suggestion{
+    display: block;
+    background-color: white;
+    width: 100%;
+    height:23%;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .1) ;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom:10%;
+    padding:5px;
+    transition: box-shadow 0.5s ease-out 50ms;
+}
 
-#logo{
-    width:10%;
-    height:100%;
-    background-image: url(images/logo/Reservia.svg);
-    background-repeat: no-repeat;
-    background-size:100%;
+.minia_suggestion:hover{
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .2) ;
+    transition: box-shadow 0.5s ease-out 50ms;
+}
+
+.minia_image_suggestion{
     display:inline-flex;
-    align-items: center;
-    margin-top:20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width:35%;
+    height:100%;
+    object-fit: cover;
+    position:relative;
     float:left;
-    min-width:100px;
-    min-height:100px;
 }
 
-#logo a{
+
+.suggestion_text{
+    float:left;
+    width: 60%;
+    height:100%;
+    margin-left:3%;
+    padding-top:5%;
+}
+
+.suggestion_text p{
     display:block;
-    width:100%;
-    height:100%;
-}
-
-#liens{
-    display: inline-flex;
-    height:100%;
-    font-size:18px;
-    width:40%;
-    float:right;
+    height:30%;
 }
 
 
-
-.bouton_menu{
-    display:inline-flex;
-    height:100%;
-    width:33%;
-    align-items:center;
-    text-align:center;
-    min-width: 140px;
-    margin-top:-5px;
+.note_hebergement{
+    line-height: 2em;
 }
 
-.bouton_menu a{
-    display:inline-block;
-    width:100%;
-    align-self: center;
-}
-
-#page_active{
-    border-top: solid 4px blue;
-}
-
-
-
-.bouton_menu a:focus{
-    color:red;
-}
-
-
-
-#sign_up a{
-    color:#1261d6;
-    font-weight: bolder;
-}
-
-
-
-/* Barre de recherche */
-
-
-#input_search{
-    width:500px;
-    height:50px;
-    margin-bottom:50px;
-    align-items: center;
-    text-align: center;
-    border:none;
-    
-    
-}
-
-#input_search *{
-    height:100%;
-    font-weight:900;
-
-}
-
-
-
-#form_recherche input{
-    float:left;
-    width:50%;
-    padding:10px;
-    font-size: 1em;
-    border:none;
-    border-top:solid 4px #F2F2F2;
-    border-bottom:solid 4px #F2F2F2;
-    
-
-}
-
-#form_recherche input:focus{
-    outline:none;
+#suggestions .note_hebergement{
+    line-height: 1em;
 }
 
 
 
 
+/* Fomattage texte */
 
-#button_search{
-    float:left;
-    display:inline-flex;
-    text-align: center;
-    align-items: center;
-    background: #0065FC;
-    color: white;
-    font-size: 17px;
-    cursor:pointer;
-    width:fit-content;
-    text-align:center;
-    vertical-align:middle;
-    border: hidden;
-    border-top-right-radius: 20px;  
-    border-bottom-right-radius: 20px; 
-    padding-left:2.5%;
-    padding-right:2.5%;
+
+
+.etoile_vide{
+    color:#F2F2F2;
 }
 
-#button_search p{
-    width:100%;
+.etoile_pleine{
+    color:#0065FC;
 }
 
-<<<<<<< Updated upstream
-#button_search:active{
-    background: #0057da;
+.minia_resultat p{
+    margin-left:5%;
+    margin-bottom: 4%;
+    font-size: 100%;
 }
 
 
-
-#icone_search{
-    float:left;
-    color:black;
-    background-color:#F2F2F2;
-    border-top-left-radius: 20px;  
-    border-bottom-left-radius: 20px;   
-    width:50px; 
-    text-align: center;
-    float:left;
-    justify-content: center;
-    align-items: center;
-    font-size:20px;
+.minia_suggestion p{
+    margin-bottom: 5%;
+    height:30%;
+    font-size:1em;
 }
 
 
-
-#hebergements{
-    display: hidden;
-    height:0px;
-    width:0px;
+#search_results h2{
+    margin-bottom:4%;
 }
-=======
->>>>>>> Stashed changes
+
+#suggestions h2{
+    margin-bottom:10%;
+}
+
+.nom_hebergement{
+    font-weight:bolder;
+    font-size: 1.2em;
+}
+
 
 
 /* Partie "Activités" */
@@ -774,6 +607,9 @@ footer{
 
 .nom_lieu{
     display:block;
+    width:100%;
+    padding-left:5%;
+    font-weight: bold;
 }
 
 #colonne1, #colonne3{
@@ -784,9 +620,6 @@ footer{
 #colonne1 img, #colonne3 img{
     height:90%;
 
-<<<<<<< Updated upstream
-}
-=======
 }
 
 
@@ -817,4 +650,3 @@ footer{
 .div_footer h3{
     line-height: 3em;
 }
->>>>>>> Stashed changes
