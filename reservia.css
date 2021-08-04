@@ -41,8 +41,6 @@ a:hover{
 
 header{
     margin-top:-5px;
-    padding-left:auto;
-    padding-right:auto;
     height:auto;
     width:100%;
 }
@@ -1280,8 +1278,6 @@ footer{
     width: 100%;
     background-color: #F2F2F2;
     width:100%;
-    padding-left:10%;
-    padding-right:10%;
     line-height: 2em;
     padding-bottom:5%;
     padding-top:2%;
@@ -1291,8 +1287,31 @@ footer{
 #footer{
     display:flex;
     flex-direction:row;
+    width:1340px;
+    margin-right: auto;
+    margin-left:auto;
+    
 }
 
+@media (max-width: 1500px){
+    #footer{
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1300px){
+    #footer{
+        width: 1000px;
+    }
+}
+
+
+@media (max-width: 540px){
+    #footer{
+        width:100%;
+        padding:0;
+    }   
+}
 
 .div_footer{
     display: inline-flex;
