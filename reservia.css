@@ -29,7 +29,7 @@ a:visited {
 }
 
 a:hover {
-  color: blue;
+  color: #0065fc;
   transition: color 0.5s ease-out 50ms;
 }
 
@@ -109,11 +109,11 @@ header {
   display: inline-block;
   width: 100%;
   align-self: center;
-  color: blue;
+  color: #0065fc;
 }
 
 #page_active {
-  border-top: solid 4px blue;
+  border-top: solid 4px #0065fc;
 }
 
 #sign_up a {
@@ -915,7 +915,6 @@ header {
 }
 
 .colonnes_activite {
-  display: inline-block;
   width: 22%;
   height: 450px;
   box-sizing: border-box;
@@ -938,7 +937,13 @@ header {
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   box-sizing: border-box;
+  transition: box-shadow 0.5s ease-out 50ms;
 }
+
+.minia_activite:hover {
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s ease-out 50ms;
+  }
 
 .minia_activite:last-of-type {
   margin-bottom: 0%;
@@ -1046,7 +1051,10 @@ header {
     border-radius: 20px;
     box-sizing: border-box;
     margin-bottom: 50px;
+    transition: box-shadow 0.5s ease-out 50ms;
   }
+
+ 
 
   #colonne1 img,
   #colonne3 img {
