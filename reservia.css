@@ -953,9 +953,12 @@ header {
   margin-bottom: 4%;
 }
 
+
+
 .nom_lieu {
   width: 100%;
   padding-left: 5%;
+  padding-right: 5%;
   font-weight: bold;
   font-size: 0.8em;
 }
@@ -979,6 +982,10 @@ header {
   height: 165px;
 }
 
+#frioul .minia_image_activite, #parc_longchamp .minia_image_activite, #notre_dame .minia_image_activite{
+    margin-bottom:2%;
+}
+
 #notre_dame {
   height: 195px;
   margin-bottom: 40px;
@@ -987,6 +994,19 @@ header {
 #parc_longchamp {
   height: 215px;
 }
+
+@media (max-width: 1500px) {
+    .minia_activite {
+      font-size:0.95em;
+    }
+
+    #parc_longchamp .minia_image_activite, #notre_dame .minia_image_activite{
+        margin-bottom:4%;
+    }
+    
+  }
+  
+
 
 @media (max-width: 540px) {
   #activites_ville {
