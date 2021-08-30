@@ -739,14 +739,15 @@ header {
 }
 
 #suggestions_ville {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   height: 50px;
   margin-bottom: 20px;
 }
 
 #suggestions_ville h2 {
   display: inline-block;
-  width: 90%;
+  width: 85%;
+  margin:0;
 }
 
 #display_suggestions {
