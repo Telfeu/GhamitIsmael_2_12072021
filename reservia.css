@@ -955,17 +955,18 @@ header {
   width: 100%;
   height: 80%;
   object-fit: cover;
-  margin-bottom: 4%;
+  margin-bottom: 0.5rem;
+ 
 }
 
 
 
 .nom_lieu {
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left:1rem;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1rem;
+  
 }
 
 #colonne1,
@@ -988,7 +989,7 @@ header {
 }
 
 #frioul .minia_image_activite, #parc_longchamp .minia_image_activite, #notre_dame .minia_image_activite{
-    margin-bottom:2%;
+    margin-bottom:0.5rem;
 }
 
 #notre_dame {
@@ -1006,9 +1007,15 @@ header {
     }
 
     #parc_longchamp .minia_image_activite, #notre_dame .minia_image_activite{
-        margin-bottom:4%;
+        margin-bottom:0.5rem;
     }
     
+  }
+
+  @media (max-width: 1500px) {
+    .minia_activite {
+      font-size:1rem;
+    }
   }
   
 
