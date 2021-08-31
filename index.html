@@ -10,10 +10,12 @@
     <title>Reservia</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="reservia.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+ href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+ rel="stylesheet"
+  >
     <script
       src="https://kit.fontawesome.com/67aac6e877.js"
       crossorigin="anonymous"
@@ -23,7 +25,7 @@
   <body>
     <header>
       <!-- L'en-tête comprenant le nom du site et les boutons de navigation -->
-      <div id="navigation">
+      <nav id="navigation">
         <div id="logo"><a href="index.html"></a></div>
         <div class="bouton_menu" id="page_active">
           <a href="#hebergements">Hébergements</a>
@@ -35,14 +37,14 @@
           <a href="#navigation">S'inscrire</a>
         </div>
         <span class="clear"></span>
-      </div>
+      </nav>
     </header>
     <!-- Le corps de la page -->
 
-    <div id="conteneur">
+    <main id="conteneur">
       <!-- L'espace recherche -->
 
-      <div id="recherche">
+      <section id="recherche">
         <div id="titre_recherche">
           <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
           <p>En plein centre ville ou en pleine nature</p>
@@ -82,12 +84,12 @@
           <div id="info"><i class="fas fa-info"></i></div>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-      </div>
+      </section>
 
       <!-- Affichage des résultats de la recherche -->
 
-      <div id="hebergements">
-        <div id="search_results">
+      <section id="hebergements">
+        <section id="search_results">
           <div id="hebergement_ville"><h2>Hébergements à Marseille</h2></div>
 
           <div id="display_results">
@@ -216,11 +218,11 @@
           </div>
 
           <div id="show_more"><h3>Afficher plus</h3></div>
-        </div>
+        </section>
 
         <!-- Suggestions d'hébergement -->
 
-        <div id="suggestions">
+        <section id="suggestions">
           <div id="suggestions_ville">
             <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line"></i>
@@ -289,12 +291,12 @@
                 </div></div
             ></a>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 
       <!--</div>-->
 
-      <div id="activites_ville">
+      <section id="activites_ville">
         <h2>Activités à Marseille</h2>
 
         <div id="activites">
@@ -310,6 +312,7 @@
               </div>
             </a>
           </div>
+
           <div class="colonnes_activite">
             <a href="index.html" class="lien_activite"
               ><div class="minia_activite petite_minia" id="pomegues">
@@ -371,8 +374,8 @@
             >
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- Pied de page -->
     <footer>
